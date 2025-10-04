@@ -165,8 +165,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions or suggestions, please contact us through:
 
 - Project Issues: [GitHub Issues](https://github.com/james20141606/chatbot/issues)
-- Email: [Your Email]
-
+- Email: [james20141606@gmail.com]
 ---
 
 ⭐ If this project helps you, please give it a star!
