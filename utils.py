@@ -7,8 +7,17 @@ from streamlit.logger import get_logger
 from langchain_openai import ChatOpenAI
 from langchain_community.chat_models import ChatOllama
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
-from pymongo import MongoClient, ASCENDING
-from bson import ObjectId
+try:
+    from pymongo import MongoClient, ASCENDING
+    from bson import ObjectId
+    MONGODB_AVAILABLE = True
+except Exception as e:
+    print(f"MongoDB not available: {e}")
+    MongoClient = None
+    ASCENDING = None
+    ObjectId = None
+    MONGODB_AVAILABLE = False
+
 import hashlib
 import uuid
 

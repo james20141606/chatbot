@@ -15,3 +15,12 @@ pydantic==2.10.6
 docarray==0.41.0
 streamlit==1.50.0
 pymongo==4.10.1
+
+# 新增依赖 - 用户追踪后端和存储
+fastapi
+uvicorn
+gridfs
+streamlit-cookies-manager
+geoip2
+python-multipart
+sentence-transformers
